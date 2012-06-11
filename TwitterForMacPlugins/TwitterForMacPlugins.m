@@ -49,6 +49,27 @@ NSString * const kInstagramHost = @"instagr.am";
     return [self valueForKey:@"_url"];
 }
 
+- (void)_addMenuItemsForStatus:(id)status toMenu:(id)menu
+{
+    [self _addMenuItemsForStatus:status toMenu:menu];
+
+    NSMenuItem *spearatorItem = [NSMenuItem separatorItem];
+    [menu addItem:spearatorItem];
+
+    NSString *itemTitle = [NSString stringWithFormat:@"via %@",
+                           [status valueForKey:@"sourceName"]];
+    NSString *sourceLink = [status valueForKey:@"sourceLink"];
+    NSMenuItem *item = [self _menuItemWithTitle:itemTitle action:^{
+        [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:sourceLink]];
+    }];
+    [menu addItem:item];
+}
+
+- (id)_menuItemWithTitle:(id)title action:(id)block
+{
+    return [self _menuItemWithTitle:title action:block];
+}
+
 @end
 
 @implementation TwitterForMacPlugins
@@ -62,12 +83,19 @@ NSString * const kInstagramHost = @"instagr.am";
     
     method_exchangeImplementations(class_getClassMethod(imageServiceClass, @selector(fullSizeImageURLForURL:)), 
                                    class_getClassMethod(rootClass, @selector(_fullSizeImageURLForURL:)));
-    
+
     Class twitterEntitySetClass = NSClassFromString(@"TwitterEntityURL");
-    
+
     method_exchangeImplementations(class_getInstanceMethod(twitterEntitySetClass, @selector(url)), 
                                    class_getInstanceMethod(rootClass, @selector(_url)));
     
+    Class statusListViewControllerClass = NSClassFromString(@"TMStatusListViewController");
+
+    method_exchangeImplementations(class_getInstanceMethod(statusListViewControllerClass, @selector(addMenuItemsForStatus:toMenu:)),
+                                   class_getInstanceMethod(rootClass, @selector(_addMenuItemsForStatus:toMenu:)));
+
+    method_exchangeImplementations(class_getInstanceMethod(statusListViewControllerClass, @selector(menuItemWithTitle:action:)),
+                                   class_getInstanceMethod(rootClass, @selector(_menuItemWithTitle:action:)));
 }
 
 + (TwitterForMacPlugins *)sharedInstance
