@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		996C889D15838E0A0085C76D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 996C889C15838E0A0085C76D /* Cocoa.framework */; };
+		996C88A715838E0A0085C76D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 996C88A515838E0A0085C76D /* InfoPlist.strings */; };
+		996C88B015838E450085C76D /* TwitterForMacPlugins.m in Sources */ = {isa = PBXBuildFile; fileRef = 996C88AF15838E450085C76D /* TwitterForMacPlugins.m */; };
+		996C88B3158391580085C76D /* TwitterForMacPlugins.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 996C889915838E0A0085C76D /* TwitterForMacPlugins.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		996C88B2158391450085C76D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "/Users/mybeky/Library/Application Support/SIMBL/Plugins/";
+			dstSubfolderSpec = 0;
+			files = (
+				996C88B3158391580085C76D /* TwitterForMacPlugins.bundle in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		996C889915838E0A0085C76D /* TwitterForMacPlugins.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterForMacPlugins.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		996C889C15838E0A0085C76D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		996C889F15838E0A0085C76D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		996C88A015838E0A0085C76D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		996C88A115838E0A0085C76D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		996C88A415838E0A0085C76D /* TwitterForMacPlugins-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwitterForMacPlugins-Info.plist"; sourceTree = "<group>"; };
+		996C88A615838E0A0085C76D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		996C88A815838E0A0085C76D /* TwitterForMacPlugins-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwitterForMacPlugins-Prefix.pch"; sourceTree = "<group>"; };
+		996C88AE15838E450085C76D /* TwitterForMacPlugins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterForMacPlugins.h; sourceTree = "<group>"; };
+		996C88AF15838E450085C76D /* TwitterForMacPlugins.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterForMacPlugins.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		996C889615838E0A0085C76D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				996C889D15838E0A0085C76D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		996C888E15838E0A0085C76D = {
+			isa = PBXGroup;
+			children = (
+				996C88A215838E0A0085C76D /* TwitterForMacPlugins */,
+				996C889B15838E0A0085C76D /* Frameworks */,
+				996C889A15838E0A0085C76D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		996C889A15838E0A0085C76D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				996C889915838E0A0085C76D /* TwitterForMacPlugins.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		996C889B15838E0A0085C76D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				996C889C15838E0A0085C76D /* Cocoa.framework */,
+				996C889E15838E0A0085C76D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		996C889E15838E0A0085C76D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				996C889F15838E0A0085C76D /* AppKit.framework */,
+				996C88A015838E0A0085C76D /* CoreData.framework */,
+				996C88A115838E0A0085C76D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		996C88A215838E0A0085C76D /* TwitterForMacPlugins */ = {
+			isa = PBXGroup;
+			children = (
+				996C88AE15838E450085C76D /* TwitterForMacPlugins.h */,
+				996C88AF15838E450085C76D /* TwitterForMacPlugins.m */,
+				996C88A315838E0A0085C76D /* Supporting Files */,
+			);
+			path = TwitterForMacPlugins;
+			sourceTree = "<group>";
+		};
+		996C88A315838E0A0085C76D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				996C88A415838E0A0085C76D /* TwitterForMacPlugins-Info.plist */,
+				996C88A515838E0A0085C76D /* InfoPlist.strings */,
+				996C88A815838E0A0085C76D /* TwitterForMacPlugins-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		996C889815838E0A0085C76D /* TwitterForMacPlugins */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 996C88AB15838E0A0085C76D /* Build configuration list for PBXNativeTarget "TwitterForMacPlugins" */;
+			buildPhases = (
+				996C889515838E0A0085C76D /* Sources */,
+				996C889615838E0A0085C76D /* Frameworks */,
+				996C889715838E0A0085C76D /* Resources */,
+				996C88B1158390000085C76D /* ShellScript */,
+				996C88B2158391450085C76D /* CopyFiles */,
+				996C88B4158391780085C76D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitterForMacPlugins;
+			productName = TwitterForMacPlugins;
+			productReference = 996C889915838E0A0085C76D /* TwitterForMacPlugins.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		996C889015838E0A0085C76D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 996C889315838E0A0085C76D /* Build configuration list for PBXProject "TwitterForMacPlugins" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 996C888E15838E0A0085C76D;
+			productRefGroup = 996C889A15838E0A0085C76D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				996C889815838E0A0085C76D /* TwitterForMacPlugins */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		996C889715838E0A0085C76D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				996C88A715838E0A0085C76D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		996C88B1158390000085C76D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "echo `killall Twitter`";
+		};
+		996C88B4158391780085C76D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "open /Applications/Twitter.app";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		996C889515838E0A0085C76D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				996C88B015838E450085C76D /* TwitterForMacPlugins.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		996C88A515838E0A0085C76D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				996C88A615838E0A0085C76D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		996C88A915838E0A0085C76D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		996C88AA15838E0A0085C76D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		996C88AC15838E0A0085C76D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TwitterForMacPlugins/TwitterForMacPlugins-Prefix.pch";
+				INFOPLIST_FILE = "TwitterForMacPlugins/TwitterForMacPlugins-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		996C88AD15838E0A0085C76D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TwitterForMacPlugins/TwitterForMacPlugins-Prefix.pch";
+				INFOPLIST_FILE = "TwitterForMacPlugins/TwitterForMacPlugins-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		996C889315838E0A0085C76D /* Build configuration list for PBXProject "TwitterForMacPlugins" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				996C88A915838E0A0085C76D /* Debug */,
+				996C88AA15838E0A0085C76D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		996C88AB15838E0A0085C76D /* Build configuration list for PBXNativeTarget "TwitterForMacPlugins" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				996C88AC15838E0A0085C76D /* Debug */,
+				996C88AD15838E0A0085C76D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 996C889015838E0A0085C76D /* Project object */;
+}
