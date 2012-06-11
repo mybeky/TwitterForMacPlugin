@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'TwitterForMacPlugins' target in the 'TwitterForMacPlugins' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
