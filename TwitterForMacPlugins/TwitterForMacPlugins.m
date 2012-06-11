@@ -9,13 +9,10 @@
 #import <objc/runtime.h>
 #import "TwitterForMacPlugins.h"
 
-NSString * const kInstagramHost = @"instagr.am";
-
 @implementation NSObject(TwitterForMacPlugins)
 
 + (BOOL)_isImageServiceLink:(NSURL *)aURL
 {
-    NSLog(@"%@", aURL);
     if (aURL && [aURL.absoluteString
          rangeOfString:@"instagr.am/p/"].location != NSNotFound) {
         return YES;
@@ -36,7 +33,6 @@ NSString * const kInstagramHost = @"instagr.am";
 
 - (void)__didLoadImage:(id)image
 {
-    NSLog(@"%@", image);
     [self __didLoadImage:image];
 }
 
