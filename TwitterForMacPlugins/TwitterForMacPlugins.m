@@ -17,7 +17,7 @@
          rangeOfString:@"instagr.am/p/"].location != NSNotFound) {
         return YES;
     }
-    return NO;
+    return [self _isImageServiceLink:aURL];
 }
 
 + (NSURL *)_fullSizeImageURLForURL:(NSURL *)linkURL
