@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		994BB0D9158D259A001FC379 /* ReadLaterGrowlMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 994BB0D8158D259A001FC379 /* ReadLaterGrowlMock.m */; };
 		996C889D15838E0A0085C76D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 996C889C15838E0A0085C76D /* Cocoa.framework */; };
 		996C88A715838E0A0085C76D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 996C88A515838E0A0085C76D /* InfoPlist.strings */; };
 		996C88B015838E450085C76D /* TwitterForMacPlugins.m in Sources */ = {isa = PBXBuildFile; fileRef = 996C88AF15838E450085C76D /* TwitterForMacPlugins.m */; };
 		996C88B3158391580085C76D /* TwitterForMacPlugins.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 996C889915838E0A0085C76D /* TwitterForMacPlugins.bundle */; };
+		999117A9158CF5B8001A6694 /* icon-instapaper.png in Resources */ = {isa = PBXBuildFile; fileRef = 999117A8158CF5B8001A6694 /* icon-instapaper.png */; };
+		99F3561B158CE1A3009C4220 /* ReadLaterLoginPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99F3561A158CE1A3009C4220 /* ReadLaterLoginPanel.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +30,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		994BB0D7158D259A001FC379 /* ReadLaterGrowlMock.h */ = {isa = PBXFileReference; fileEncoding = 4; path = ReadLaterGrowlMock.h; sourceTree = "<group>"; };
+		994BB0D8158D259A001FC379 /* ReadLaterGrowlMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadLaterGrowlMock.m; sourceTree = "<group>"; };
 		996C889915838E0A0085C76D /* TwitterForMacPlugins.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterForMacPlugins.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		996C889C15838E0A0085C76D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		996C889F15838E0A0085C76D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -37,6 +42,8 @@
 		996C88A815838E0A0085C76D /* TwitterForMacPlugins-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwitterForMacPlugins-Prefix.pch"; sourceTree = "<group>"; };
 		996C88AE15838E450085C76D /* TwitterForMacPlugins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterForMacPlugins.h; sourceTree = "<group>"; };
 		996C88AF15838E450085C76D /* TwitterForMacPlugins.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterForMacPlugins.m; sourceTree = "<group>"; };
+		999117A8158CF5B8001A6694 /* icon-instapaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-instapaper.png"; sourceTree = "<group>"; };
+		99F3561A158CE1A3009C4220 /* ReadLaterLoginPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadLaterLoginPanel.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +99,10 @@
 			children = (
 				996C88AE15838E450085C76D /* TwitterForMacPlugins.h */,
 				996C88AF15838E450085C76D /* TwitterForMacPlugins.m */,
+				994BB0D7158D259A001FC379 /* ReadLaterGrowlMock.h */,
+				994BB0D8158D259A001FC379 /* ReadLaterGrowlMock.m */,
+				99F3561A158CE1A3009C4220 /* ReadLaterLoginPanel.xib */,
+				999117A8158CF5B8001A6694 /* icon-instapaper.png */,
 				996C88A315838E0A0085C76D /* Supporting Files */,
 			);
 			path = TwitterForMacPlugins;
@@ -117,9 +128,7 @@
 				996C889515838E0A0085C76D /* Sources */,
 				996C889615838E0A0085C76D /* Frameworks */,
 				996C889715838E0A0085C76D /* Resources */,
-				996C88B1158390000085C76D /* ShellScript */,
 				996C88B2158391450085C76D /* CopyFiles */,
-				996C88B4158391780085C76D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -161,39 +170,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				996C88A715838E0A0085C76D /* InfoPlist.strings in Resources */,
+				99F3561B158CE1A3009C4220 /* ReadLaterLoginPanel.xib in Resources */,
+				999117A9158CF5B8001A6694 /* icon-instapaper.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		996C88B1158390000085C76D /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/bash;
-			shellScript = "echo `killall Twitter`";
-		};
-		996C88B4158391780085C76D /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/bash;
-			shellScript = "open /Applications/Twitter.app";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		996C889515838E0A0085C76D /* Sources */ = {
@@ -201,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				996C88B015838E450085C76D /* TwitterForMacPlugins.m in Sources */,
+				994BB0D9158D259A001FC379 /* ReadLaterGrowlMock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +289,7 @@
 				996C88AD15838E0A0085C76D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
