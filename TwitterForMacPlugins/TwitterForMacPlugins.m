@@ -77,6 +77,10 @@
             }
         }
 
+        if ([[NSUserDefaults standardUserDefaults] boolForKey:@"ShowDevelopMenu"]) {
+            indexToInsertMenu += 2;
+        }
+
         for (NSString *link in links) {
             NSMenuItem *item = [self _menuItemWithTitle:@"↪ Send to Instapaper" action:^{
                 [readLaterClient addURL:link
