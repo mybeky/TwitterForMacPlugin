@@ -30,7 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		994BB0D7158D259A001FC379 /* ReadLaterGrowlMock.h */ = {isa = PBXFileReference; fileEncoding = 4; path = ReadLaterGrowlMock.h; sourceTree = "<group>"; };
+		994BB0D7158D259A001FC379 /* ReadLaterGrowlMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadLaterGrowlMock.h; sourceTree = "<group>"; };
 		994BB0D8158D259A001FC379 /* ReadLaterGrowlMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadLaterGrowlMock.m; sourceTree = "<group>"; };
 		996C889915838E0A0085C76D /* TwitterForMacPlugins.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterForMacPlugins.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		996C889C15838E0A0085C76D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
