@@ -22,6 +22,12 @@
 
 @end
 
+@protocol ImageViewerDelegate
+
+- (NSMenu *)contextMenuForView:(NSView *)view;
+
+@end
+
 @protocol ABKeychain
 
 + (id)setPassword:(NSString *)password forUsername:(NSString *)username serviceName:(NSString *)service;
@@ -29,7 +35,7 @@
 
 @end
 
-@interface TwitterForMacPlugins : NSObject <NSTextFieldDelegate>
+@interface TwitterForMacPlugins : NSObject <NSTextFieldDelegate, NSDraggingSource, ImageViewerDelegate>
 
 @property (assign) IBOutlet NSWindow *readLaterLoginSheet;
 @property (assign) IBOutlet NSButton *addReadLaterServiceButton;
@@ -43,14 +49,23 @@
 
 @property (nonatomic, retain) NSObject<ReadLaterClient> *readLaterClient;
 
-+ (TwitterForMacPlugins *) sharedInstance;
++ (TwitterForMacPlugins *)sharedInstance;
++ (NSUInteger)imageTypeForURL:(NSURL *)aURL;
++ (NSString *)imageNameForURL:(NSURL *)aURL;
 
 @property (nonatomic, assign) id account;
+@property (nonatomic, assign) NSImage *currentImage;
+@property (nonatomic) NSBitmapImageFileType currentImageType;
+@property (nonatomic, copy) NSString *currentImageName;
 
 - (void)changeReadLaterService:(NSPopUpButton *)sender;
 - (IBAction)cancelReadLaterLoginSheet:(id)sender;
 - (IBAction)verifyReadLaterLogin:(id)sender;
 - (void)readLaterServiceLoginFailed;
 - (void)readLaterServiceLoginSuccess;
+- (void)copyImage:(NSMenuItem *)sender;
+- (void)saveImage:(NSMenuItem *)sender;
+- (void)willSaveImageInWindow:(NSWindow *)window;
+- (void)saveImage:(NSImage *)aImage toURL:(NSURL *)aURL;
 
 @end
