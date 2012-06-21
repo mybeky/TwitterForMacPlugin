@@ -6,6 +6,7 @@ Features:
 * Show tweet's source in context menu.
 * Open unshortend links in browser. 
 * Add Instapaper support.
+* Save/Copy image.
 
 Usage:
 
